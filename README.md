@@ -36,7 +36,7 @@ For the version 1.0.0 this library should cover all features bellow:
  * Follow the [Github flow](https://docs.github.com/en/get-started/quickstart/github-flow) to contribute to this project.
  * [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) for concise messages.
 
-# Documentation
+## Documentation
 * Use 'rustdoc' to generate documentation
 * Describe your code what it does and how it does it.
 * Give examples 

@@ -33,6 +33,19 @@ impl Matrix {
         }
         matrix
     }
+
+    pub fn from_string(string: &str) -> Matrix {
+        let mut matrix = Matrix::new(0, 0);
+        for i in string.lines() {
+            let row: Vec<f64> = i.trim().split(' ').map(|x| x.parse::<f64>().unwrap()).collect();
+            if matrix.cols == 0 {
+                matrix.rows = row.len();
+            }
+            matrix.cols += 1;
+            matrix.data.push(row);
+        }
+        matrix
+    }
 }
 
 
